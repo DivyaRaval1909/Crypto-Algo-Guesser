@@ -1,8 +1,5 @@
-# 🔐 Cryptographic Algorithm Guessing Workshop
+# 🔐 Cryptographic Algorithm Guessing 
 
-## 🎯 Workshop Overview
-
-This workshop demonstrates a **microservices architecture** using the **MERN stack** with **Machine Learning integration**. You'll build a full-stack application that predicts cryptographic algorithms from ciphertext.
 
 ## 🏗️ Architecture Overview
 
@@ -260,15 +257,3 @@ const handleSubmit = async (e) => {
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [Cryptography Basics](https://en.wikipedia.org/wiki/Cryptography)
 - [Machine Learning Fundamentals](https://scikit-learn.org/stable/)
-
-## 🎉 Workshop Completion
-
-Congratulations! You've successfully built a full-stack application with:
-- ✅ Microservices architecture
-- ✅ Modern frontend with React
-- ✅ Robust backend with Node.js
-- ✅ ML integration with Python
-- ✅ Professional UI/UX design
-- ✅ Error handling and validation
-
-This project demonstrates real-world development practices and can serve as a foundation for more complex applications! 
