@@ -1,0 +1,341 @@
+.cipher-form-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border: 2px solid #333333;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.input-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #444444;
+  border-radius: 12px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  resize: vertical;
+  transition: all 0.3s ease;
+  background: #222222;
+  color: #ffffff;
+}
+
+.input-group textarea:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.input-group textarea:disabled {
+  background: #333333;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.submit-btn, .clear-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background: #ffffff;
+  color: #000000;
+  flex: 2;
+  font-weight: 600;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  background: #f0f0f0;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  background: #666666;
+  color: #999999;
+}
+
+.clear-btn {
+  background: #333333;
+  color: #ffffff;
+  border: 2px solid #555555;
+  flex: 1;
+}
+
+.clear-btn:hover:not(:disabled) {
+  background: #444444;
+  color: #ffffff;
+  border-color: #666666;
+}
+
+.clear-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #2a1a1a;
+  color: #ff6b6b;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ff4444;
+  margin-bottom: 1rem;
+}
+
+.result-card {
+  background: #222222;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #444444;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.result-header h3 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.algorithm-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confidence-bar {
+  margin-bottom: 1rem;
+}
+
+.confidence-bar span {
+  display: block;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.confidence-progress {
+  width: 100%;
+  height: 8px;
+  background: #444444;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.feature {
+  background: #333333;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #555555;
+}
+
+.feature-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #aaaaaa;
+  margin-bottom: 0.25rem;
+}
+
+.feature-value {
+  display: block;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.algorithms-info {
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 1rem;
+  border: 2px solid #444444;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.algorithms-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.algorithm-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Probability Distribution Styles */
+.probability-distribution {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #2a2a2a;
+  border-radius: 12px;
+  border: 2px solid #444444;
+}
+
+.probability-distribution h4 {
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.probability-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.probability-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.probability-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.algorithm-name {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.probability-value {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.probability-progress {
+  width: 100%;
+  height: 8px;
+  background: #444444;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #666666;
+}
+
+.probability-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+  min-width: 2px;
+}
+
+.total-probability {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #444444;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-card {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .submit-btn, .clear-btn {
+    flex: none;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .algorithms-list {
+    justify-content: center;
+  }
+} 
